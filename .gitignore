@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.manifest
+*.spec
+
+# --- Virtual Environments ---
+# You are using 'venv', but I added others just in case
+venv/
+env/
+.venv/
+.env
+
+# --- Streamlit ---
+# Ignores local configuration and secrets
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# --- VS Code ---
+# Ignores your local editor settings
+.vscode/
+
+# --- Operating System ---
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac (just in case)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Logs & Databases ---
+*.log
+*.sqlite
+
+# --- Temporary/Uploaded Data ---
+# Good practice to ignore folder where you might test file uploads later
+data/
+uploads/

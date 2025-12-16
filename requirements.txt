@@ -1,0 +1,7 @@
+streamlit
+google-generativeai
+youtube-search
+duckduckgo-search
+PyPDF2
+python-pptx
+Pillow
