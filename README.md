@@ -41,6 +41,23 @@ ResourceScout is an autonomous academic research assistant that transforms stati
 
 ---
 
+## 📂 Repository Structure
+
+A quick guide to the codebase architecture:
+
+```text
+ResourceScout/
+├── main.py              # 🖥️ The Entry Point: Handles the Streamlit UI, State Management, and Layout.
+├── service.py           # ⚙️ The Controller: Connects the UI to the Core logic; handles caching and error recovery.
+├── core/                # 🧠 The Core Engine (Backend Logic)
+│   ├── llm.py           #    - Gemini Handler: Manages the "Two-Brain" (JSON vs Text) logic and Retry loops.
+│   ├── retrieval.py     #    - Search Engine: Handles DuckDuckGo (Web) and YouTube searching with strict region filtering.
+│   └── files.py         #    - I/O Layer: Processes PDF parsing and Image OCR using Gemini Vision.
+├── requirements.txt     # 📦 Dependencies: List of required Python libraries.
+└── .gitignore           # 🛡️ Safety: Prevents uploading venv, secrets, and cache files.
+
+---
+
 ## 🚀 How to Run Locally
 
 1.  **Clone the Repository**
